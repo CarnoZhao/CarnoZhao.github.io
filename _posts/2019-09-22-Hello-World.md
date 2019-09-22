@@ -4,7 +4,7 @@ title:      Hello World!
 subtitle:   我的第一个post！
 date:       2019-09-22
 author:     Carno
-header-img: path/to/figure.png
+header-img: img/post-hello-world.png
 catalog: true
 tags:
     - Git Pages
