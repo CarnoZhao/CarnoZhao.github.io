@@ -5,7 +5,6 @@ subtitle:   我的第一个post！
 date:       2019-09-22
 author:     Carno
 header-img: img/post-hello-world.png
-header-mask: true
 catalog: true
 tags:
     - Git Pages
