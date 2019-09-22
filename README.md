@@ -11,6 +11,6 @@ header-img: path/to/figure.png
 catalog: true
 tags:
     - tag1
-	- tag2
+    - tag2
 ---
 ```
