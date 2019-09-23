@@ -12,9 +12,8 @@ layout: default
         position: relative;
         background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
     }
-
     {% if page.header-mask %}
-    header.intro-header.header-mask{
+    header.intro-header .header-mask{
         width: 100%;
         height: 100%;
         position: absolute;
@@ -33,7 +32,7 @@ layout: default
                         <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
                         {% endfor %}
                     </div>
-                    <h1><font color="black">{{ page.title }}</font></h1>
+                    <h1>{{ page.title }}</h1>
                     {% comment %}
                         always create a h2 for keeping the margin , Hux
                     {% endcomment %}
@@ -98,7 +97,7 @@ layout: default
                     repo: '{{site.gitalk.repo}}',
                     owner: '{{site.gitalk.owner}}',
                     admin: ['{{site.gitalk.admin}}'],
-                    distractionFreeMode: {{site.gitalk.distractionFreeMode}},
+                    distractionFreeMode: '{{site.gitalk.distractionFreeMode}}',
                     id: md5(location.pathname),
                     });
                     gitalk.render('gitalk-container');
@@ -146,7 +145,7 @@ layout: default
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
         				{% for tag in site.tags %}
-                            {% if tag[1].size > {{site.featured-condition-size}} %}
+                            {% if tag[1].size > {{ site.featured-condition-size }} %}
                 				<a href="/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
                                     {{ tag[0] }}
                                 </a>
