@@ -2,7 +2,7 @@
 layout: post
 title: 文献阅读 DenseNets
 subtitle: 神经网络模型学习（一）
-date: 2019-09-26
+date: 2019-09-27
 author: Carno
 header-img: post-paper-densenets.png
 header-mask: 0.5
