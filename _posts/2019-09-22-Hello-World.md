@@ -7,7 +7,7 @@ author:     Carno
 header-img: img/post-hello-world.png
 catalog: true
 tags:
-    - Git Pages
+- Git Pages
 ---
 
 # Hello World!
