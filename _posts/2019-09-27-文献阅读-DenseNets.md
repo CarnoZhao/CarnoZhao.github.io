@@ -84,11 +84,11 @@ Conv: BN-ReLU-Conv
 | -------------- | ------------------------------------------------------------ | -------------- | :------------: |
 | Convolution    | $7\times7,\ s = 2,\ p = 3$                                   | $112\times112$ |      $2k$      |
 | Pooling        | $3\times3,\ s = 2,\ p = 1$                                   | $56\times56$   |      $2k$      |
-| Dense          | $\left[\begin{array}\\1\times1 \\ 3\times3\\\end{array}\right]\times6$ | $56\times56$   |      $k$       |
+| Dense          | $\left[\begin{aligned}1\times1 \\ 3\times3\\\end{aligned}\right]\times6$ | $56\times56$   |      $k$       |
 | Transition     | $1\times1\ conv;\ 2\times2\ avg\ pool,\ s=2$                 | $28\times28$   |     $k/2$      |
-| Dense          | $\left[\begin{array}\\1\times1 \\ 3\times3\\\end{array}\right]\times12$ | $28\times28$   |      $k$       |
+| Dense          | $\left[\begin{aligned}1\times1 \\ 3\times3\\\end{aligned}\right]\times12$ | $28\times28$   |      $k$       |
 | Transition     | $1\times1\ conv;\ 2\times2\ avg\ pool,\ s=2$                 | $14\times14$   |     $k/2$      |
-| Dense          | $\left[\begin{array}\\1\times1 \\ 3\times3\\\end{array}\right]\times24$ | $14\times14$   |      $k$       |
+| Dense          | $\left[\begin{aligned}1\times 1 \\ 3\times 3\\\end{aligned}\right]\times 24$ | $14\times14$   |      $k$       |
 | Transition     | $1\times1\ conv;\ 2\times2\ avg\ pool,\ s=2$                 | $7\times7$     |     $k/2$      |
-| Dense          | $\left[\begin{array}\\1\times1 \\ 3\times3\\\end{array}\right]\times16$ | $7\times7$     |      $k$       |
+| Dense          | $\left[\begin{aligned}1\times1 \\ 3\times3\\\end{aligned}\right]\times16$ | $7\times7$     |      $k$       |
 | Classification | $7\times7\ avg\ pool$                                        | $1\times 1$    |      $k$       |
